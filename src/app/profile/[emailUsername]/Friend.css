@@ -1,0 +1,51 @@
+.friend-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: white double 5px;
+    padding: 1% 2%;
+}
+@media screen and (max-width: 960px) {
+    .friend-info{
+        flex-direction: column;
+    }
+    .profile-link{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .profile-link img{
+        margin-right: 0 !important;
+    }
+}
+.stats-lvl{
+    display: flex;
+    align-items: center;
+}
+.stats-lvl img {
+    width: 30px;
+    height: 30px;
+}
+.profile-link{
+    display: flex;
+    align-items: center;
+}
+.profile-link img{
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 100%;
+    border: black double 5px;
+}
+.buttons-change{
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons-change span{
+    margin: 5px;
+    cursor: grab;
+}
+.buttons-change span:hover{
+    color: red;
+}
