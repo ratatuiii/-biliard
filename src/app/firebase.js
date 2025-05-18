@@ -7,12 +7,12 @@ import { getDatabase } from 'firebase/database';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyB7lVAVUyzYB8Wp_Raf-eeFpp9qkWMB9oY",
-    authDomain: "billiard-auth-db.firebaseapp.com",
-    projectId: "billiard-auth-db",
-    storageBucket: "billiard-auth-db.firebasestorage.app",
-    messagingSenderId: "287654227957",
-    appId: "1:287654227957:web:9d0554a2507a64f4ba3abc"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
